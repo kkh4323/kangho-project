@@ -8,7 +8,7 @@ import * as Joi from '@hapi/joi';
 
 @Module({
   imports: [
-    // BlogModule,
+    BlogModule,
     ConfigModule.forRoot({
       validationSchema: Joi.object({
         POSTGRES_HOST: Joi.string().required(),

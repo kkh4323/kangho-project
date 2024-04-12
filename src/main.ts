@@ -6,6 +6,6 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const configService: ConfigService = app.get(ConfigService);
   const port = configService.get('SERVER_PORT') || 9000;
-  await app.listen(port);
+  await app.listen(8000);
 }
 bootstrap();
